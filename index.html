@@ -1,51 +1,47 @@
-
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>المركز المصري الفرنسي</title>
-  <style>
-    body {
-      font-family: Tahoma, sans-serif;
-      background: #fff5f8;
-      text-align: center;
-      padding: 40px 15px;
-    }
-    h1 { color: #b83270; }
-    .card {
-      background: white;
-      padding: 20px;
-      margin: 15px auto;
-      border-radius: 12px;
-      max-width: 400px;
-      box-shadow: 0 2px 8px #ddd;
-    }
-    button {
-      background: #b83270;
-      color: white;
-      padding: 12px 25px;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>المركز المصري الفرنسي</title>
+<style>
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Tahoma, Arial, sans-serif; background: #fff8fb; color: #29232a; line-height: 1.7; }
+header { background: white; padding: 20px; border-bottom: 1px solid #f2dce5; }
+.container { max-width: 1000px; margin: auto; }
+.logo { color: #b83270; font-size: 22px; font-weight: bold; }
+.hero { padding: 65px 20px; text-align: center; background: #fceaf1; }
+.hero h1 { color: #982854; font-size: clamp(27px, 5vw, 44px); margin: 10px 0; }
+.hero p { max-width: 620px; margin: 15px auto 25px; }
+.btn { display: inline-block; background: #b83270; color: white; padding: 12px 26px; border-radius: 10px; text-decoration: none; font-weight: bold; }
+.btn:hover { background: #922552; }
+section { padding: 45px 20px; }
+h2 { text-align: center; color: #982854; }
+.services { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.card { background: white; padding: 25px; border-radius: 14px; box-shadow: 0 3px 15px #eadbe3; }
+.card h3 { color: #b83270; }
+footer { text-align: center; background: #982854; color: white; padding: 22px; }
+@media(max-width: 600px) { .services { grid-template-columns: 1fr; } }
+</style>
 </head>
 <body>
-  <h1>المركز المصري الفرنسي</h1>
-  <p>للعلاج الطبيعي والتغذية العلاجية</p>
-
-  <div class="card">
-    <h2>خدماتنا</h2>
-    <p>العلاج الطبيعي والتأهيل</p>
-    <p>التغذية العلاجية وإنقاص الوزن</p>
-    <p>متابعة الحالات والتأهيل الحركي</p>
-  </div>
-
-  
-<a href="tel:0402249950">
-  <button>اتصل لحجز موعد</button>
-</a>
-  
+<header><div class="container"><div class="logo">المركز المصري الفرنسي</div><div>للعلاج الطبيعي والتغذية العلاجية</div></div></header>
+<main>
+<div class="hero">
+<h1>صحتك وحركتك الأفضل تبدأ بخطوة</h1>
+<p>رعاية متخصصة في العلاج الطبيعي والتأهيل والتغذية العلاجية، بخطط تناسب احتياجات كل حالة.</p>
+<a class="btn" href="tel:0402249950">اتصل لحجز موعد</a>
+</div>
+<section class="container">
+<h2>خدمات المركز</h2>
+<div class="services">
+<div class="card"><h3>العلاج الطبيعي</h3><p>تقييم وتأهيل مشكلات العضلات والمفاصل والحركة.</p></div>
+<div class="card"><h3>التغذية العلاجية</h3><p>خطط غذائية فردية لإدارة الوزن وتحسين العادات الغذائية.</p></div>
+<div class="card"><h3>التأهيل الحركي</h3><p>برامج تأهيل مخصصة وفق تقييم الحالة.</p></div>
+<div class="card"><h3>متابعة الحالات</h3><p>متابعة التقدم وتعديل الخطة العلاجية حسب الحاجة.</p></div>
+</div>
+</section>
+</main>
+<footer>المركز المصري الفرنسي — جميع الحقوق محفوظة</footer>
 </body>
 </html>
